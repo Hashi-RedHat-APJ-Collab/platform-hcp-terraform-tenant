@@ -2,6 +2,7 @@
 variable "tfe_organization_name" {
   description = "TFE organization name"
   type        = string
+  default = "Hashi-RedHat-APJ-Collab"
 }
 
 variable "tfe_projects" {
@@ -12,11 +13,11 @@ variable "tfe_projects" {
   }))
   default     = {
     "project1" = {
-      name        = "Demo Project - IaaS"
+      name        = "Demo Project IaaS"
       description = "Description for Project 1"
     }
     "project2" = {
-      name        = "Demo Project 2"
+      name        = "Demo Project Networks"
       description = "Description for Project 2"
     }
   }
