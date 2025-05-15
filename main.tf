@@ -11,5 +11,5 @@ resource "tfe_project" "this" {
 
   name        = each.value.name
   description = each.value.description
-  organization = data.tfe_organization.this.id
+  organization = data.tfe_organization.this.name
 }
