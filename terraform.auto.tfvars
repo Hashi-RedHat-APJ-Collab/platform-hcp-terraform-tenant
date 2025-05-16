@@ -20,11 +20,11 @@ tfe_projects = {
       description = "Other Demos - Better Together"
     }
 
-    "project3rhel" = {
+    "rhel" = {
       name        = "Sandbox Project Red Hat"
       description = "Sandbox Project Red Hat"
     }
-    "project4hashi" = {
+    "hashi" = {
       name        = "Sandbox Project Hashicorp"
       description = "Sandbox Project Hashicorp"
     }
