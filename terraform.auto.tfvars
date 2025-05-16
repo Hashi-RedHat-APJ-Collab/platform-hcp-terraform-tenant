@@ -2,21 +2,21 @@
 tfe_organization_name = "Hashi-RedHat-APJ-Collab"
 tfe_projects = {
     "iaas" = {
-      name        = "Demo Project IaaS"
+      name        = "IaaS"
       description = "IaaS Demos - Better Together"
     }
     "networks" = {
-      name        = "Demo Project Networks"
+      name        = "Networks"
       description = "Networks Demos - Better Together"
     }
 
     "openshift" = {
-      name        = "Demo Project OpenShift with Vault"
-      description = "Other Demos - Better Together"
+      name        = "OpenShift with Vault"
+      description = "OpenShift - Better Together"
     }
 
     "other" = {
-      name        = "Demo Project Other"
+      name        = "Other"
       description = "Other Demos - Better Together"
     }
 
