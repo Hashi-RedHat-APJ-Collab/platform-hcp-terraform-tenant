@@ -22,3 +22,17 @@ variable "tfe_projects" {
     }
   }
 }
+
+variable "vault_variables" {
+  description = "Environment variables for Vault JWT authentication in Terraform Cloud"
+  type        = map(string)
+  default     = {
+    TFC_VAULT_ADDR                      = "https://tf-aap-public-vault-76d1afab.7739a0fc.z1.hashicorp.cloud:8200"
+    TFC_VAULT_AUTH_PATH                 = "jwt_tfc"
+    TFC_VAULT_NAMESPACE                 = "admin"
+    TFC_VAULT_PROVIDER_AUTH             = "true"
+    TFC_VAULT_RUN_ROLE                  = "tfc"
+    TFC_VAULT_WORKLOAD_IDENTITY_AUDIENCE = "vault.tfc.workspace.identity"
+  }
+  sensitive   = true
+}
