@@ -60,7 +60,7 @@ resource "tfe_variable" "vault" {
   key          = each.key
   value        = each.value
   category     = "env"
-  sensitive    = true
+  sensitive    = false
   hcl          = false
   variable_set_id = tfe_variable_set.vault.id
 }
