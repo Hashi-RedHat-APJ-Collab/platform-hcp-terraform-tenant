@@ -34,5 +34,4 @@ variable "vault_variables" {
     TFC_VAULT_RUN_ROLE                  = "tfc"
     TFC_VAULT_WORKLOAD_IDENTITY_AUDIENCE = "vault.tfc.workspace.identity"
   }
-  sensitive   = true
 }
