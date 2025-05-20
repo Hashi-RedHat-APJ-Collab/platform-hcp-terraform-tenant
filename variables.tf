@@ -16,10 +16,6 @@ variable "tfe_projects" {
       name        = "Demo Project IaaS"
       description = "Description for Project 1"
     }
-    "project2" = {
-      name        = "Demo Project Networks"
-      description = "Description for Project 2"
-    }
   }
 }
 

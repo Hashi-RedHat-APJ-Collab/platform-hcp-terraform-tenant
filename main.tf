@@ -22,6 +22,7 @@ resource "tfe_variable_set" "this" {
   name        = "${each.value.name}-var-set"
   description = "${each.value.description} varset"
   organization = data.tfe_organization.this.name
+  parent_project_id = tfe_project.this[each.key].id
 }
 
 
@@ -31,6 +32,7 @@ resource "tfe_project_variable_set" "test" {
   
   variable_set_id = tfe_variable_set.this[each.key].id
   project_id      = tfe_project.this[each.key].id
+  
 }
 
 
