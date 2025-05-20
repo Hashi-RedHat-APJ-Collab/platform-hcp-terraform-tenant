@@ -31,7 +31,7 @@ variable "vault_variables" {
     TFC_VAULT_AUTH_PATH                 = "jwt_tfc"
     TFC_VAULT_NAMESPACE                 = "admin/hashi-redhat"
     TFC_VAULT_PROVIDER_AUTH             = "true"
-    TFC_VAULT_RUN_ROLE                  = "vault_admin"
+    TFC_VAULT_RUN_ROLE                  = "vault_admins"
     TFC_VAULT_WORKLOAD_IDENTITY_AUDIENCE = "vault.tfc.workspace.identity"
   }
 }
