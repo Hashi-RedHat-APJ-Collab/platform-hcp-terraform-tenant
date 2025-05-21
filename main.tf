@@ -15,7 +15,7 @@ resource "tfe_project" "this" {
 }
 
 
-# create a project variable set for each project
+# create a project variable set for each project scoped to the project
 resource "tfe_variable_set" "this" {
   for_each = var.tfe_projects
 
