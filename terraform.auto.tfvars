@@ -42,3 +42,9 @@ tfe_projects = {
       description = "Aaron's Project"
     }
   }
+
+
+  aap_variables = {
+    AAP_HOST = "https://aap.simon-lynch.sbx.hashidemos.io/"
+    AAP_USERNAME = "admin"
+  }
