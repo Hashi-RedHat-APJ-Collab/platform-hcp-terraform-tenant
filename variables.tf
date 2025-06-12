@@ -50,3 +50,12 @@ variable "consumer_projects" {
     }
   }
 }
+
+variable "aap_variables" {
+  description = "Environment variables for AAP in Terraform Cloud"
+  type        = map(string)
+  default     = {
+    APP_HOST = "https://aap.simon-lynch.sbx.hashidemos.io/"
+    APP_USERNAME = "admin"
+  }
+}

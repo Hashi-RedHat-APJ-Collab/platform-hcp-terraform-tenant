@@ -106,3 +106,21 @@ resource "tfe_project_variable_set" "consumer_vault" {
   project_id      = tfe_project.consumer[each.key].id
 
 }
+
+
+resource "tfe_variable_set" "aap" {
+  name        = "aap-creds-set"
+  description = "AAP credentials varset"
+  organization = data.tfe_organization.this.name
+}
+resource "tfe_variable" "aap" {
+  for_each = var.aap_variables
+
+  key          = each.key
+  value        = each.value
+  category     = "env"
+  sensitive    = false
+  hcl          = false
+  variable_set_id = tfe_variable_set.aap.id
+}
+
