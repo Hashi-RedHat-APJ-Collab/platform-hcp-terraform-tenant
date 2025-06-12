@@ -41,6 +41,14 @@ tfe_projects = {
       name        = "AaronsProject"
       description = "Aaron's Project"
     }
+    "Simon" = {
+      name        = "SimonsProject"
+      description = "Simon's Project"
+    }
+    "Glenn" = {
+      name        = "GlennsProject"
+      description = "Glenn's Project"
+    }
   }
 
 
