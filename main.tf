@@ -97,3 +97,12 @@ resource "tfe_project_variable_set" "consumer" {
   project_id      = tfe_project.consumer[each.key].id
 
 }
+
+
+resource "tfe_project_variable_set" "consumer" {
+  for_each = var.consumer_projects
+
+  variable_set_id = tfe_variable_set.vault.id
+  project_id      = tfe_project.consumer[each.key].id
+
+}
