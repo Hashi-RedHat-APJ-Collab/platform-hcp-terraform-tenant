@@ -78,3 +78,22 @@ resource "tfe_project" "consumer" {
   description = each.value.description
   organization = data.tfe_organization.this.name
 }
+
+
+resource "tfe_variable_set" "consumer" {
+  for_each = var.consumer_projects
+
+  name        = "${each.value.name}-var-set"
+  description = "${each.value.description} varset"
+  organization = data.tfe_organization.this.name
+  parent_project_id = tfe_project.consumer[each.key].id
+}
+
+
+resource "tfe_project_variable_set" "consumer" {
+  for_each = var.consumer_projects
+
+  variable_set_id = tfe_variable_set.consumer[each.key].id
+  project_id      = tfe_project.consumer[each.key].id
+
+}
