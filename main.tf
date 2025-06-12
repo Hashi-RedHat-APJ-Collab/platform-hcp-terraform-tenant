@@ -99,7 +99,7 @@ resource "tfe_project_variable_set" "consumer" {
 }
 
 
-resource "tfe_project_variable_set" "consumer" {
+resource "tfe_project_variable_set" "consumer_vault" {
   for_each = var.consumer_projects
 
   variable_set_id = tfe_variable_set.vault.id
