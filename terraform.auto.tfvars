@@ -30,3 +30,15 @@ tfe_projects = {
     }
 
   }
+
+
+  consumer_projects = {
+    "Fred" = {
+      name        = "FredsProject"
+      description = "Fred's Project"
+    }
+    "Aaron" = {
+      name        = "AaronsProject"
+      description = "Aaron's Project"
+    }
+  }

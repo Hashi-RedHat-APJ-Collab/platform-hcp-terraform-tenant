@@ -66,3 +66,15 @@ resource "tfe_variable" "vault" {
   hcl          = false
   variable_set_id = tfe_variable_set.vault.id
 }
+
+
+
+
+
+resource "tfe_project" "consumer" {
+  for_each = var.consumer_projects
+
+  name        = each.value.name
+  description = each.value.description
+  organization = data.tfe_organization.this.name
+}

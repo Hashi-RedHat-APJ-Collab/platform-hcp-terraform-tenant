@@ -31,3 +31,22 @@ variable "vault_variables" {
     TFC_VAULT_WORKLOAD_IDENTITY_AUDIENCE = "vault.tfc.workspace.identity"
   }
 }
+
+
+variable "consumer_projects" {
+  description = "Map of consumer projects to create"
+  type        = map(object({
+    name        = string
+    description = string
+  }))
+  default     = {
+    "Fred" = {
+      name        = "FredsProject"
+      description = "Fred's Project"
+    }
+    "Aaron" = {
+      name        = "AaronsProject"
+      description = "Aaron's Project"
+    }
+  }
+}
