@@ -124,3 +124,11 @@ resource "tfe_variable" "aap" {
   variable_set_id = tfe_variable_set.aap.id
 }
 
+
+resource "tfe_project_variable_set" "consumer_aap" {
+  for_each = var.consumer_projects
+
+  variable_set_id = tfe_variable_set.aap.id
+  project_id      = tfe_project.consumer[each.key].id
+
+}
