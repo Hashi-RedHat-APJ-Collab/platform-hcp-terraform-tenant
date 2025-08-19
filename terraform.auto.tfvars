@@ -53,6 +53,10 @@ tfe_projects = {
       name        = "JessicasProject"
       description = "Jessica's Project"
     }
+    "Omar" = {
+      name        = "OmarProject"
+      description = "Omar's Project"
+    }
     "WatsonX" = {
       name        = "WatsonXOrchestrate"
       description = "WatsonX Orchestrate Project"
