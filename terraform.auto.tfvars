@@ -64,9 +64,8 @@ tfe_projects = {
     "David" = {
       name        = "DavidsProject"
       description = "David's Project"
+    }
   }
-
-
   aap_variables = {
     AAP_HOST = "https://aap.aaron-evans.sbx.hashidemos.io/"
     AAP_USERNAME = "admin"
