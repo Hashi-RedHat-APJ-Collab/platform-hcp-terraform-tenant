@@ -61,6 +61,9 @@ tfe_projects = {
       name        = "WatsonXOrchestrate"
       description = "WatsonX Orchestrate Project"
     }
+    "David" = {
+      name        = "DavidsProject"
+      description = "David's Project"
   }
 
 
